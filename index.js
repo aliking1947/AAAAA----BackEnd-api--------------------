@@ -9,11 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded());
 
 const prisma = new PrismaClient();
-//نمونه برای استفاده
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
-//پایان نمونه
+
 
 app.post("/createProduct", async (req, res) => {
   const name = req.body.name;
