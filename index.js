@@ -1,7 +1,9 @@
 const express = require("express");
+const product = require("./api/product");
 let cors = require("cors");
 const app = express();
 const port = 3001;
+app.use("/api/product",product);
 const { PrismaClient } = require(".prisma/client");
 const { json } = require("express");
 app.use(cors());
