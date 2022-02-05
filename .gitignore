@@ -13,3 +13,5 @@ web/.next
 out
 dist
 *.log
+
+.vercel
